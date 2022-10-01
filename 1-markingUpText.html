@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 1</title>
 </head>
+
 <body>
     <!---
         Page Sections
-            address,article,aside
-            footer,header,nav
-            section
+            address,@article,@aside
+            footer,@header,@nav
+            @section
     -->
     <!-- 
         Headings
@@ -19,18 +21,88 @@
     -->
     <!--
         Grouping content elements and attributes
-            blockquote,cite,div
+            @blockquote,cite,div
             figure,figcaption,hr
-            main,p,pre
+            main,@p,pre
     -->
     <!--
         List elements and attributes
             dd,dl,dt
-            li,ol,ul
+            @li,@ol,@ul
     -->
     <!--
         Breaks
             br,wbr
     -->
+    <!--
+        Inline elements
+        a,@em,@strong,q,@abbr,@cite,dfn,code,var,samp,kbd,sub/sup,mark,@time,data,@ins/del,b,@i,s,u,
+        small,bdi/bdo,data,span,@blockquote
+    -->
+
+    <article>
+        <header>
+            <h1>Ensalada Oasis</h1>
+            <p>Ensalada fresca con productos de la huerta y un delicioso aderezo agridulce. <i>Apta para veganos</i>
+            </p>
+        </header>
+        <nav>
+            <h2>Indice</h2>
+            <ol>
+                <li>Introducción</li>
+                <li>Ingredientes</li>
+                <li>Elaboración</li>
+            </ol>
+        </nav>
+        <section>
+            <h2>Introducción</h2>
+            <p>Al igual que muchas otras recetas de mi blog, esta receta fue diseñada por la <abbr title="Advanced Cuisine School">ACS</abbr>
+                en la decimoquinta edición de su concurso anual, celebrado en <time datetime="2017-02">Febrero de 2017</time>. Al igual
+                que todas las recetas de ese año, vienen recogidas en <cite>ACS Cookbook 2017</cite>.
+            </p>
+            <p>Como dijo una vez el famoso chef Ferran Font, <del title="Se retiro en 2019">que aún sigue trabajando</del>:
+            <blockquote>La cocina de autor es poner
+                tu personalidad en lo que haces, y ese sentimiento la convierte en algo distinto
+            </blockquote>Asi que sentios de libres de crear cocina de autor y modificar esta recete a vuestro
+            gusto y a vuestra manera</p>
+        </section>
+        <section>
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>Un cogollo de lechuga romana</li>
+                <li>Un tomate mediano</li>
+                <li>Medio aguacate</li>
+                <li>Un cuarto de cebolla</li>
+                <li>Una zanahoria</li>
+                <li>Una cucharada sopera de pistachos pelados</li>
+                <li>Aceite</li>
+                <li>Vinagre</li>
+                <li>Miel</li>
+                <li>Sal y pimienta</li>
+                <li>Tabasco al gusto</li>
+                <aside>
+                    El aceite,vinagre y miel son para el aderezo
+                </aside>
+            </ul>
+        </section>
+        <section>
+            <h2>Elaboración</h2>
+            <p>Trozear la lechuga,cortar el tomate,la cebolla y el aguacate a daditos, pelados
+                rallar la zanahoria,mezclar todos los ingredientes en un bol, añadir los pistachos, añadir 
+                salsa <dfn>tabasco</dfn> que es una salsa picante fabricada con pimientos y esta muy rica         
+            </p>
+            <p>
+                En un bote con tapa mezclar el aceite vinagre, la miel, sal y pimienta, cerrar el bote y
+                agitar para que se integren todos los ingredientes. Verter sobre los vegetales troceados y remover.
+            </p>
+
+            <p>
+                <strong>Consumir inmediatamente antes de que se oxide el aguacate</strong>
+            </p>
+        </section>
+
+    </article>
+
 </body>
+
 </html>
