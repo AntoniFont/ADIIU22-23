@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 1</title>
+    <!--Ejemplo de external style sheet-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Ejemplo de embedded style sheet-->
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 2em    
+        }
+    </style>
+
 </head>
 
 <body>
@@ -61,7 +71,9 @@
         </nav>
         <section>
             <h2 id="intro">Introducción</h2>
-            <img src="https://as01.epimg.net/buenavida/imagenes/2017/02/07/portada/1486484711_091195_1486486118_noticia_normal.jpg" alt="Persona comiendo ensalada">
+            <!--EJEMPLO DE INLINE STYLE EN LA ETIQUETA IMG-->
+            <img src="https://as01.epimg.net/buenavida/imagenes/2017/02/07/portada/1486484711_091195_1486486118_noticia_normal.jpg" alt="Persona comiendo ensalada"
+            style="width: 25vw; height: 15vw ; margin-left: auto; margin-right: auto ; display:block ">
             <p>Al igual que muchas otras recetas de mi blog, esta receta fue diseñada por la <abbr title="Advanced Cuisine School">ACS</abbr>
                 en la decimoquinta edición de su concurso anual, celebrado en <time datetime="2017-02">Febrero de 2017</time>. Al igual
                 que todas las recetas de ese año, vienen recogidas en <cite>ACS Cookbook 2017</cite>.
