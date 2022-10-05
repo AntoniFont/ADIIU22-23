@@ -1,0 +1,17 @@
+p{
+    color:white;
+    font-weight: bold;
+    background-color: blue;
+    opacity: 0.5;
+}
+
+#primero{
+    background-color: red;
+}
+#segundo{
+    background-image: url(mallorca.jpg);
+    background-repeat: round;
+    /* background-position-x: 7em; */
+    /* background-position-y: 9em; */
+    
+}
