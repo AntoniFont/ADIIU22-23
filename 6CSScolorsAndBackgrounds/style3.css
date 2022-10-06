@@ -1,0 +1,11 @@
+body{
+    background-image:url(mallorca.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+}
+
+p{
+    color:white;
+    font-weight: bold;
+}

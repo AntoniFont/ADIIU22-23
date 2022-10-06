@@ -12,6 +12,8 @@ p{
     background-image: url(mallorca.jpg);
     background-repeat: round;
     /* background-position-x: 7em; */
-    /* background-position-y: 9em; */
-    
+    /* background-position-y: 9em; */ 
+}
+#tercero{
+    background-image: linear-gradient(360deg,white,black)
 }

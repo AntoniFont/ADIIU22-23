@@ -1,11 +1,6 @@
-body{
-    background-image:url(mallorca.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover; 
+#primero{
+    background-image: linear-gradient(90deg, yellow,green 15%, blue);
 }
-
-p{
-    color:white;
-    font-weight: bold;
+#segundo{
+    background-image: radial-gradient(750px 750px ,rgb(214, 143, 35),rgb(255, 217, 0));
 }
