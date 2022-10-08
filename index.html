@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 style="text-align:center">APRENDIENDO HTML, CSS & JAVASCRIPT</h1>
+    <ul id="lista">
+    </ul>
+    <script>
+        var lista = document.getElementById("lista");
+        for(var i = 1;i<10;i++){
+            var li = document.createElement("li");
+            var a = document.createElement("a")
+            a.setAttribute("href","./" + i + "/index.html")
+            var textnode = document.createTextNode("Prueba nº: " + i);
+            a.appendChild(textnode)
+            li.appendChild(a)
+            lista.appendChild(li) 
+        }
+    </script>
+</body>
+</html>
