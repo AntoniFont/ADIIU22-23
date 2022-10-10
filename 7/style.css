@@ -1,0 +1,63 @@
+#rectangulo {
+    /* display: solid; */
+    background-color: red; 
+    width: 400px;
+    height: 400px;
+}
+#rectangulo:hover{
+    background-color:green
+}
+button{
+    width:50px;
+    height:50px;
+}
+button:active{
+    width:60px;
+    height:60px;
+}
+a:link{
+    color:blueviolet
+}
+a:visited{
+    color:aqua
+}
+textarea{
+    width:500px;
+    height:30px;
+}
+textarea:enabled{
+    width:500px;
+    height:20px;
+}
+#divConHijos{
+    border-style: solid;
+    border-color:black;
+    border-width: 0.3em;   
+}
+@keyframes miPrimeraAnimacion{
+    from{background-color: green;}
+    to{background-color: pink;}
+}
+#divConHijos p:first-child{ 
+    /*De los hijos de "divConHijos" escoje el primer parrafo, si  pones "*:first-child" en lugar de 
+    "p:first-child" puedes escoger el primer elemento en general en lugar del primer parrafo*/
+    animation-name: miPrimeraAnimacion;
+    animation-duration:2s;
+    animation-iteration-count:infinite ;
+}
+img{
+    width: 200px;
+    height:200px;
+    border-width:0.5em;
+    border-style: solid;
+}
+
+img[title*="ta"]{
+    border-width: 1.5em;
+}
+img[title$="ante"]{
+    border-style:dashed;
+}
+img[title^="cons"]{
+    border-color:aqua;
+}

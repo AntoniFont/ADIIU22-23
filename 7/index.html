@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO CLASS SELECTORS, PSEUDO ELEMENT SELECTORS & ATRIBUTE SELECTORS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>7. PSEUDO CLASS SELECTORS, PSEUDO ELEMENT SELECTORS & ATRIBUTE SELECTORS</h1>
+    <p>Puedes encontrar documentación de los pseudo class selectors <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">aquí</a>
+        <br>Funcionalidad añadida mediante pseudo class selectors:
+    </p>
+    <ul>
+        <li>Cuando pasas el ratón por el rectangulo rojo cambiara de color a verde (User action pseudo class selectors)
+        </li>
+        <li>Cuando pulsas el ratón en cualquier boton cambia el tamaño (User action pseudo class selectors)</li>
+        <li>Hay 2 estilos, uno para los links visitados y otro para los no visitados(Link pseudo class selectors)</li>
+        <li><a href="https://youtube.com">Link no visitado</a> <a href="https://google.com">Link visitado</a></li>
+        <li>Seleccionamos el primer parrafo hijo de un elemento (el texto prueba) y le aplicamos una propiedad (Structural pseudo class selectors)</li>
+        <li>Finalmente, practico el selecccionar elementos con ciertos atributos </li>
+    </ul><br><br><hr><br>
+    <div id="rectangulo">
+    </div>
+    <button>Boton</button>
+    <hr>
+    <p>En el disabled el texto ni sale pero pone "texto con atributo disabled = false"</p>
+    <textarea>texto con atributo disabled = false</textarea>
+    <textarea disabled="disabled">texto con atributo disabled = true</textarea>
+    <br><br><hr><br><br>
+    <br><br>
+    <div id="divConHijos">
+        <p >prueba</p><br>
+        <p>El primer parrafo de este div cambiara de color verde a rosa</p>
+    </div><br><br><br>
+    <hr>
+    <p>Selección de atributos con el css: </p>
+    <ul>
+        <li>Borde extra gordo a aquellas imagenes con el atributo titulo que contenga "ta"</li>
+        <li>Borde dashed a aquellas imagenes que tengan el atributo titulo acabado en "ante"</li>
+        <li>Borde de color aqua a aquellas imagenes que tengan el atributo titulo que empieze con "cons"</li>
+    </ul>
+    <figure><img title="vocal" src="./a.jpg"> <figcaption>Vocal</figcaption></figure>
+    <figure><img title="consonante" src="./p.jpg"><figcaption>Consonante</figcaption></figure>
+    <figure><img title="patatas" src="./patatas.jpg"><figcaption>Patatas</figcaption></figure>
+    <figure><img title="constelacion" src="./constelacion.jpg"><figcaption>constelacion</figcaption></figure>
+    <figure><img title="cantante" src="./cantante.jpg   "><figcaption>Cantante</figcaption></figure>
+
+
+
+
+
+</body>
+
+</html>
