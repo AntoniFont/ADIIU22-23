@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8.CSS BOX MODEL</title>
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <h1>8.CSS BOX MODEL</h1>
-    
+    <h2>Diagrama general</h2>
+    <img id="diagrama" src="diagrama.png" title="diagrama de las diferencias entre margen, padding y contenido">
+    <h2>Atributo box-sizing</h2>
+    <div id="contentBox">
+        <h3>El width se aplica al content box</h3>
+        <p>Este div tiene la propiedad width a 500 píxeles. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+            nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in
+            faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus
+            elit quis enim consequat, sit amet vulputate libero interdum. Vivamus purus felis, pellentesque non
+            sollicitudin eget, convallis sed risus. Donec tristique sollicitudin magna, non pretium risus interdum id.
+            Integer vel tortor laoreet orci dignissim consectetur quis nec tellus. Sed cursus lacus a erat ornare, sit
+            amet vehicula enim venenatis. Sed at laoreet purus, ac pellentesque nunc. Etiam gravida est nulla, nec
+            lacinia ante sagittis in. In mi odio, eleifend sit amet massa in, eleifend elementum risus. Quisque sit amet
+            iaculis elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque
+            tempor vulputate ullamcorper. Nulla facilisi. </p>
+    </div>
+    <div id="borderBox">
+        <h3>El width se aplica al border box</h3>
+        <p>Este div tiene la propiedad width a 500 píxeles. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+            nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in
+            faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus
+            elit quis enim consequat, sit amet vulputate libero interdum. Vivamus purus felis, pellentesque non
+            sollicitudin eget, convallis sed risus. Donec tristique sollicitudin magna, non pretium risus interdum id.
+            Integer vel tortor laoreet orci dignissim consectetur quis nec tellus. Sed cursus lacus a erat ornare, sit
+            amet vehicula enim venenatis. Sed at laoreet purus, ac pellentesque nunc. Etiam gravida est nulla, nec
+            lacinia ante sagittis in. In mi odio, eleifend sit amet massa in, eleifend elementum risus. Quisque sit amet
+            iaculis elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque
+            tempor vulputate ullamcorper. Nulla facilisi. </p>
+    </div>
+    <h2>Atributo overflow</h2>
+    <div class= "atributoOverflow" id="overflowVisible">
+        <h3>Overflow:visible</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus elit quis enim consequat, sit amet vulputate libero interdum. </p>
+    </div>
+    <div class= "atributoOverflow" id="overflowHidden">
+        <h3>Overflow:hidden</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus elit quis enim consequat, sit amet vulputate libero interdum. </p>
+    </div>
+    <div class= "atributoOverflow" id="overflowScroll">
+        <h3>Overflow:scroll</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus elit quis enim consequat, sit amet vulputate libero interdum. </p>
+    </div>
+    <div class= "atributoOverflow" id="overflowAuto">
+        <h3>Overflow:auto</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus elit quis enim consequat, sit amet vulputate libero interdum. </p>
+    </div>
+    <h2>Atributo borderRadius</h2>
+    <div class= "atributoBorderRadius" id="bordeRedondeadoTodo">
+        <h3>Redondeado todo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus elit quis enim consequat, sit amet vulputate libero interdum. </p>
+    </div>
+    <div class= "atributoBorderRadius" id="bordeRedondeadoEsquina">
+        <h3>Redondeado todo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nulla vitae nisi congue convallis non vel erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum bibendum felis et ultricies sollicitudin. Duis mattis imperdiet dolor. Integer finibus elit quis enim consequat, sit amet vulputate libero interdum. </p>
+    </div>
+    <h2>El resto de atributos</h2>
+    <p>Como son bastante sencillos de entender simplemente los mencionare:</p>
+    <ul>
+        <li>Padding</li>
+        <li>Border</li>
+        <ul>
+            <li>Border-style</li>
+            <li>Border-top-style</li>
+            <li>Border-right-style</li>
+            <li>...</li>
+            <li>Border-width</li>
+            <li>Border-top-width</li>
+            <li>Border-right-width</li>
+            <li>...</li>
+            <li>Border-color</li>
+            <li>Border-top-color</li>
+            <li>Border-right-color</li>
+            <li>...</li>
+        </ul>
+        <li>Margins</li>
+        <li>Box shadow</li>
+    </ul>
 </body>
+
 </html>
