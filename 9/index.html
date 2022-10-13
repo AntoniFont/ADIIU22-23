@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating and Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Floating and Positioning</h1>
+    <h2>Atributo Display (tengo que repasarlo más, es un atributo importante)</h2>
+    <div id="display">
+        <div id="inline">
+            <h3>p {display:inline}</h3>
+            <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p
+            </p>
+            <h4>h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4
+            </h4>
+            <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p
+            </p>
+            <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p
+            </p>
+        </div>
+
+        <div id="block">
+            <h3>p {display:block}</h3>
+            <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p
+            </p>
+            <h4>h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4 h4
+            </h4>
+            <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p
+            </p>
+            <p>p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p
+            </p>
+        </div>
+    </div>
+    <h2>Float & clear</h2>
+    <div id="floatClear">
+        <p>Floated elements are removed from the normal flow but influence the surrounding context.</p>
+        <h3 class="floaters">"h3 floating"</h3>
+        <p>Floated elements stay within the content area of the element that contains it.</p>
+        <p>Elements don't float higher than their reference in the source.</p>
+        <h3 class="floaters">"h3 floating"</h3>
+        <h3>"h3 not clearer"</h3>
+        <h3 class="clearers">"h3 clearer left"</h3>
+        <p>You must provide a width for a floated text element. </p>
+        <p>Clear prevents an element from appearing next to a floated element and forces it to start against the next
+            available "clear" space</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/*GENERAL*/
+div {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.15em;
+    width:50vw;
+    text-align: justify;
+    padding: 0.7em;
+    margin: 1em;
+    background-color: burlywood;
+}
+
+div div{
+    background-color: blanchedalmond;
+    display:block;
+    width:45vw
+}
+
+/*1. ATRIBUTO DISPLAY*/
+#display h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#display #inline p {
+    display:inline
+}
+
+#display #block p {
+    display:block
+}
+/*2. ATRIBUTO FLOAT*/
+#floatClear .floaters{
+    float:left;
+}
+
+#floatClear .clearers{
+    clear:left;
+}
