@@ -36,3 +36,18 @@ div div{
 #floatClear .clearers{
     clear:left;
 }
+/* ATRIBUTO SHAPE-OUTSIDE Y SHAPE-MARGIN */
+#textWrap{
+    width:90vw; 
+}
+
+#textWrap img{
+    width:45%; 
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+#textWrap #img2{
+    float:left;
+}
