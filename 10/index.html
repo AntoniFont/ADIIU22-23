@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,122 @@
     <title>FLEXBOX</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <h1>FLEXBOX</h1>
+    <h2>Mi primer flexbox</h2>
+    <div>
+        <div>
+            <div class="contenido">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+    </div>
+    <h2>Flex Direction</h2>
+    <div>
+        <div>
+            <!--Normal-->
+            <h1 class="titulo">Default (row)</h1>
+            <div class="contenido">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+        <div>
+            <h1 class="titulo">Column</h1>
+            <div class="contenido" id="column">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="titulo">Row reverse</h1>
+            <div class="contenido" id="row-reverse">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="titulo">Column reverse</h1>
+            <div class="contenido" id="column-reverse">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+
+    </div>
+    <h2>Flex Wrap</h2>
+    <p>A diferencia de los ejemplos anteriores, el tamaño de las cajas salmón no se ajusta al contenido que tengan,
+        sino que esta forzado a tener un tamaño de 20em. Esto es necesario para explicar correctamente la propiedad.
+    </p>
+    <div id="wrapAtributo">
+        <div>
+            <h1 class ="titulo">wrap</h1>
+            <div class="contenido" id="wrap">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class ="titulo">wrap-reverse</h1>
+            <div class="contenido" id="wrap-reverse">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class ="titulo">default (no wrap)</h1>
+            <div class="contenido">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

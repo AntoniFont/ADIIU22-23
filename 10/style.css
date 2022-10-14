@@ -1,0 +1,68 @@
+/*GENERAL*/
+div {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.15em;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    background-color: burlywood;
+}
+div div{
+    flex-direction: column;
+    text-align: center;
+    background-color: darksalmon;
+    width:fit-content;
+    height:fit-content;
+}
+
+.titulo{
+    margin: 1px 10px 1px 10px;
+}
+
+.contenido{
+    margin:5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    border-style:none;
+}
+.cajita {
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    background-color: blanchedalmond;
+}
+/*FLEX DIRECTION*/
+#row-reverse{
+    flex-direction: row-reverse;
+}
+
+#column{
+    flex-direction: column;
+}
+
+#column-reverse{
+    flex-direction: column-reverse;
+}
+/*WRAP*/
+#wrapAtributo div .contenido{
+    width:20em;
+}
+#wrap{
+    flex-wrap: wrap;
+}
+#wrap-reverse{
+    flex-wrap:wrap-reverse;
+}
+
+
+
+
