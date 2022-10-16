@@ -11,7 +11,7 @@
 
 <body>
     <h1>FLEXBOX</h1>
-    <h2>Mi primer flexbox</h2>
+    <h2 style="font-family: system-ui">Mi primer flexbox</h2>
     <div>
         <div>
             <div class="contenido">
@@ -25,11 +25,11 @@
             </div>
         </div>
     </div>
-    <h2>Flex Direction</h2>
+    <h2>flex-direction</h2>
     <div>
         <div>
             <!--Normal-->
-            <h1 class="titulo">Default (row)</h1>
+            <h1 class="tituloEjemplo">default (row)</h1>
             <div class="contenido">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div>
-            <h1 class="titulo">Column</h1>
+            <h1 class="tituloEjemplo">column</h1>
             <div class="contenido" id="column">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -54,7 +54,7 @@
         </div>
 
         <div>
-            <h1 class="titulo">Row reverse</h1>
+            <h1 class="tituloEjemplo">row-reverse</h1>
             <div class="contenido" id="row-reverse">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -67,7 +67,7 @@
         </div>
 
         <div>
-            <h1 class="titulo">Column reverse</h1>
+            <h1 class="tituloEjemplo">column-reverse</h1>
             <div class="contenido" id="column-reverse">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -80,13 +80,13 @@
         </div>
 
     </div>
-    <h2>Flex Wrap</h2>
+    <h2>flex-wrap</h2>
     <p>A diferencia de los ejemplos anteriores, el tamaño de las cajas salmón no se ajusta al contenido que tengan,
         sino que esta forzado a tener un tamaño de 20em. Esto es necesario para explicar correctamente la propiedad.
     </p>
     <div id="wrapAtributo">
         <div>
-            <h1 class ="titulo">wrap</h1>
+            <h1 class ="tituloEjemplo">wrap</h1>
             <div class="contenido" id="wrap">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -99,7 +99,7 @@
         </div>
 
         <div>
-            <h1 class ="titulo">wrap-reverse</h1>
+            <h1 class ="tituloEjemplo">wrap-reverse</h1>
             <div class="contenido" id="wrap-reverse">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -112,7 +112,7 @@
         </div>
 
         <div>
-            <h1 class ="titulo">default (no wrap)</h1>
+            <h1 class ="tituloEjemplo">default (no wrap)</h1>
             <div class="contenido">
                 <div class="cajita">a</div>
                 <div class="cajita">b</div>
@@ -124,6 +124,36 @@
             </div>
         </div>
     </div>
+    <h2><span class="texto-normal">Alineando en el eje principal.</span> justify-content</h2>
+    <img src="justify-content.png" title="diagrama de los diferentes valores de justify-content">
+    <h2><span class="texto-normal">Alineando en el eje principal.</span> align-items</h2>
+    <img src="align-items.png" title="diagrama de los diferentes valores de align-items">
+    <h2><span class="texto-normal">Alineando elementos individuales. </span>align-self</h2>
+    <p>He forzado el tamaño de las cajas salmón a 700px x 400px para demostrar el ejemplo</p>
+    <div id="alineandoSelf">
+        <div>
+            <h1 class="tituloEjemplo">align-self:center</h1>
+            <div class = "contenido">
+                <div class="cajita">a</div>
+                <div class="cajita">b</div>
+                <div class="cajita">c</div>
+                <div class="cajita">d</div>
+                <div class="cajita">e</div>
+                <div class="cajita" id="ejemplo1">f</div>
+                <div class="cajita">g</div>
+            </div>
+        </div>
+    </div>
+    <h2>align-content</h2>
+    <p>AQUI HABRA UNA IMAGEN DE ALIGN content</p>
+    <h3>Diferencia entre align-content y align-self</h3>
+
+    align-content determines the spacing between lines
+
+    align-items determines how the items as a whole are aligned within the container.
+
+    When there is only one line, align-content has no effect
+
 </body>
 
 </html>
