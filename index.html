@@ -15,16 +15,25 @@
         <ul id="listaHtml"></ul>
         <li>CSS</li>
         <ul id="listaCSS"></ul>
-        <li>JAVASCRIPT, JQUERY & AJAX ...</li>
+        <li>JAVASCRIPT & JQUERY</li>
         <ul id="listaJavascript"></ul>
+        <li>AJAX</li>
+        <ul id="listaAjax"></ul>
+        <li>PHP</li>
+        <ul id="listaPHP"></ul>
+        
     </ul>
     <script>
         var listaHTML = document.getElementById("listaHtml");
         var listaCSS = document.getElementById("listaCSS");
         var listaJavascript = document.getElementById("listaJavascript")
+        var listaAjax = document.getElementById("listaAjax")
+        var listaPHP = document.getElementById("listaPHP")
         anadirElementos(listaHTML,1,3);
         anadirElementos(listaCSS,4,12);
-        anadirElementos(listaJavascript,13,17);
+        anadirElementos(listaJavascript,13,14);
+        anadirElementos(listaAjax,15,15);
+        anadirElementos(listaPHP,16,18);
         function anadirElementos(lista,valorinicial,valorFinal){
             for(var i = valorinicial;i<=valorFinal;i++){
             var li = document.createElement("li");
