@@ -1,17 +1,29 @@
 #vacio{
-    display:flexbox;
-    width:20vw
+    display:flex;
+    background-color: white;
+    border-width:0;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+/*Los contenidos del div vacio*/
+#vacio * {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-div {
+#selector {
     border-style: solid;
     border-color: black;
     border-width: 0.15em;
-    width:70vw;
     text-align: justify;
     padding: 0.7em;
     margin: 1em;
     background-color: burlywood;
-    display: flexbox;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
 
+#selector * {
+    margin: 1em 1em 1em 1em;
 }
