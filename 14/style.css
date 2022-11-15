@@ -1,0 +1,17 @@
+#vacio{
+    display:flexbox;
+    width:20vw
+}
+
+div {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.15em;
+    width:70vw;
+    text-align: justify;
+    padding: 0.7em;
+    margin: 1em;
+    background-color: burlywood;
+    display: flexbox;
+
+}
