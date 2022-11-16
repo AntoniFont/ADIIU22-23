@@ -10,6 +10,22 @@
 <body>
     <h1>PHP 1</h1>
     <h1>Bienvenido</h1>
-  
+    <p>Ejercicio: Crear una calculadora. El usuario introduce las operaciones que quiera realizar
+        y el servidor las realiza. Imaginemos que el usuario tiene un ordenador muy malo y las
+        operaciones consumieran muchisimos recursos, en este caso este ejercicio podria tener sentido en la vida
+        real 
+    </p>
+
+    <form action="./calculadora.php" method="post">
+        <input name="primerOperando" style="width:3em;height:1em"></input>
+        <select name="opcion">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input name="segundoOperando" style="width:3em;height:1em"></input>
+        <input type="submit"></input>
+    </form>
 </body>
 </html>
