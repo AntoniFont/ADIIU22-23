@@ -9,10 +9,13 @@
 </head>
 <body>
     <h1>PHP 2</h1>
-    <p>Para ejecutar PHP es necesario tener un servidor web,es decir, esta página <br>
-    no funcionará en github pages. Para que funcione habrá que ponerla dentro de un <br>
-    servidor web.</p>
-    
-    <a href="./main.php"><button>Una vez iniciado el web servers, haz click para continuar</button></a>
+    <h1>Bienvenido</h1>
+    <p>Ejercicio: Conectar con una base de datos y leer un registro</p>
+    <?php
+        $conection = mysqli_connect("localhost","root",""); 
+        if(!$conection){
+            echo "<p>No se pudo conectar</p>";
+        }
+    ?>
 </body>
 </html>
