@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 3</title>
+    <link rel="stylesheet" src="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>PHP 3 - SQL INJECTION</h1>
+    <div style="width:90vw;text-align: justify;">
+        <p>He creado 2 text inputs, uno quita los caracteres especiales (seguro) y el otro no, el objetivo es hacer un
+            ataque de SQL injection al inseguro.<br><br>No somos hackers profesionales, asi que para no complicar
+            demasiado las cosas
+            aqui hay pistas y datos sobre el programa y la base de datos:</p>
+        <ul>
+            <li>En esta base de datos hay 2 tablas</li>
+            <li>Una tabla tiene el nombre tablaprueba y tiene 3 columnas (id,nombre,puntos)</li>
+            <li>La otra tabla con el nombre tablasecreta que tiene 3 columnas (id,contraseña,cuentabancaria)</li>
+            <li>Cuando le das a enviar te muestra la consulta sql que se ha ejecutado y los errores que ha podido causar
+            </li>
+        </ul>
+    </div>
+
+    </p>
+    <h2>PHP no seguro</h2>
+    <div>
+        <p>Introduce un id:
+            <textarea id="inputInseguro" style="height:1em;width:3em"></textarea>
+            <br>
+        </p>
+        <button id="enviarInseguro">Enviar</button>
+        <p id="resultadosNoSeguros" style="border-style:solid;border-width:0.25em;width:fit-content">Aqui se mostraran los resultados</p>
+    </div>
+    <h2>PHP seguro</h2>
+    <div>
+        <p>Introduce un id:
+            <textarea id="inputSeguro" style="height:1em;width:3em"></textarea>
+            <br>
+        </p>
+        <button id="enviarSeguro">Enviar</button>
+        <p id="resultadosSeguros" style="border-style:solid;border-width:0.25em;width:fit-content">Aqui se mostraran los resultados</p>
+    </div>
+
+    <script>
+        $("#enviarInseguro").click(function () {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () { //Callback function
+                $("#resultadosNoSeguros").html(this.responseText);
+            }
+            xmlhttp.open("POST", "./backendInseguro.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("input=" + $("#inputInseguro").val());
+        })
+    </script>
+
+
+
+
+</body>
