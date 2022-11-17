@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 2</title>
+    <link rel="stylesheet" src="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>PHP 2 Y AJAX</h1>
+    <h1>Bienvenido</h1>
+    <p>Ejercicio: Conectar asincronamente (AJAX) con el servidor (PHP), el servidor se conecta con
+        una base de datos, hace una consulta sql y devuelve los resultados al usuario</p>
+    <p>La respuesta que deberiamos (si tuvieramos la base de datos y todo configurado) recibir es: </p>
+    <img src="./captura.png" style="border-width:0.25em;border-style: solid;">
+    <br>
+    <button id="boton">Conectar</button>
+
+    <p id = "contenido">Aquí estará el contenido</p>
+    <script>
+        $("#boton").click(function(){
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){ //Callback function
+                $("#contenido").html(this.responseText);
+            }
+            xmlhttp.open("GET","./backend.php",true);
+            xmlhttp.send(); 
+        })
+    </script>
+
+</body>
+</html>
