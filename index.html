@@ -21,7 +21,12 @@
         <ul id="listaAjax"></ul>
         <li>PHP</li>
         <ul id="listaPHP"></ul>
+        <li>Bootstrap</li>
+        <ul id="listaBootstrap"></ul>
+        <li>High Charts & High Maps</li>
+        <ul id="chartsAndMaps"></ul>
         
+
     </ul>
     <script>
         var listaHTML = document.getElementById("listaHtml");
@@ -29,11 +34,15 @@
         var listaJavascript = document.getElementById("listaJavascript")
         var listaAjax = document.getElementById("listaAjax")
         var listaPHP = document.getElementById("listaPHP")
+        var listaBootstrap = document.getElementById("listaBootstrap")
+        var listachartsAndMaps = document.getElementById("chartsAndMaps")
         anadirElementos(listaHTML,1,3);
         anadirElementos(listaCSS,4,12);
         anadirElementos(listaJavascript,13,14);
         anadirElementos(listaAjax,15,15);
         anadirElementos(listaPHP,16,18);
+        anadirElementos(listaBootstrap,19,19)
+        anadirElementos(listachartsAndMaps,20,20)
         function anadirElementos(lista,valorinicial,valorFinal){
             for(var i = valorinicial;i<=valorFinal;i++){
             var li = document.createElement("li");
