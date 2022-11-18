@@ -29,16 +29,18 @@
     </p>
     <h2>PHP no seguro</h2>
     <div>
-        <p>Introduce un id:
+        <p>Introduce un id(1,2,3,4):
             <textarea id="inputInseguro" style="height:1em;width:3em"></textarea>
             <br>
         </p>
         <button id="enviarInseguro">Enviar</button>
         <p id="resultadosNoSeguros" style="border-style:solid;border-width:0.25em;width:fit-content">Aqui se mostraran los resultados</p>
+        <button id="mostrarSpoiler">Mostrar Solucion (Spoiler)</button>
+        <p id="spoiler"></p>
     </div>
     <h2>PHP seguro</h2>
     <div>
-        <p>Introduce un id:
+        <p>Introduce un id(1,2,3,4):
             <textarea id="inputSeguro" style="height:1em;width:3em"></textarea>
             <br>
         </p>
@@ -47,14 +49,29 @@
     </div>
 
     <script>
-        $("#enviarInseguro").click(function () {
+        function enviarPHP(isInseguro){
             let xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () { //Callback function
-                $("#resultadosNoSeguros").html(this.responseText);
+            if(isInseguro == true){
+                xmlhttp.onreadystatechange = function () { //Callback function
+                    $("#resultadosNoSeguros").html(this.responseText);
+                }
+                xmlhttp.open("POST", "./backend.php", true);
+                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlhttp.send("input=" + $("#inputInseguro").val() + "&isSeguro=false" );
+            }else{
+                xmlhttp.onreadystatechange = function () { //Callback function
+                    $("#resultadosSeguros").html(this.responseText);
+                }
+                xmlhttp.open("POST", "./backend.php", true);
+                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlhttp.send("input=" + $("#inputSeguro").val() + "&isSeguro=true");
             }
-            xmlhttp.open("POST", "./backendInseguro.php", true);
-            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xmlhttp.send("input=" + $("#inputInseguro").val());
+        }
+
+        $("#enviarInseguro").click(function(){enviarPHP(true)});
+        $("#enviarSeguro").click(function(){enviarPHP(false)});
+        $("#mostrarSpoiler").click(function(){
+            $("#spoiler").html("Para acceder a los datos de la tablasecreta la id que hay que poner es : <code> 9999\" UNION SELECT * FROM tablasecreta # </code><br> La id 9999 es para que la consulta real que se hacía no muestre ningun resultado.<br>La comilla del final del 9999 es para indicar que ya se ha acabado de poner el id, ahora toca poner nuestra parte maliciosa :).<br> Con el union y el select obtienes los datos de la otra tabla.<br> El # del final es para iniciar un comentario y asi ignorar la comilla de cierre del final");
         })
     </script>
 
